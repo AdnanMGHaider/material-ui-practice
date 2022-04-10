@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardMedia, CardContent, Typography, CardActions, Button } from "@mui/material";
+import { Card, CardMedia, CardContent, Typography, CardActions, Fab } from "@mui/material";
 import iguana from "../assets/images/contemplative-reptile.jpg";
 
 const ImageCard = () => {
@@ -15,8 +15,12 @@ const ImageCard = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Fab size="small" color="primary" variant="extended">
+          Share
+        </Fab>
+        <Fab size="small" color="secondary" variant="extended">
+          Learn More
+        </Fab>
       </CardActions>
     </Card>
   );
